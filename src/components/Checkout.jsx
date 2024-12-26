@@ -48,10 +48,11 @@ export default function Checkout() {
 
     const fd = new FormData(event.target);
     const customerData = Object.fromEntries(fd.entries()); // { email: test@example.com }
-
+    console.log(customerData);
+    console.log(cartCtx.items);
     sendRequest(
       JSON.stringify({
-        order: {
+        orderData: {
           items: cartCtx.items,
           customer: customerData,
         },
