@@ -12,7 +12,7 @@ function Header() {
         <nav>
           {/* <button>Cart {0}</button> */}
           <Button size="small" variant="contained">
-            Cart
+            Cart ({0})
           </Button>
           {/* <IconButton color="primary" aria-label="add to shopping cart">
             Cart
